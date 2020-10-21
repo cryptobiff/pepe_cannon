@@ -11,10 +11,13 @@ You must meet the following requirements for this ancient tool to be useful to y
 
 ## Pepe Discord Bombardment Cannon
 Set up a Webhook URL for the discord channel you want to deploy the pepe bombardment cannon to by following the instructions below: 
-* Go to Server Settings --> Integrations --> Webhooks --> Create New Webhook)
+* Go to **Server Settings** --> **Integrations** --> **Webhooks** --> **Create New Webhook**
+* Select the name for the webhook bot user to display
+* Add an avatar if desired to your webhook PEPE User
+* Select the destination channel for your pepe cannon
 * Copy the "Webhook URL" after you have configured it and paste it below where it says **`PASTE_YOUR_DISCORD_WEBHOOK_URL_HERE`** and the rare pepe will be deployed after you run the docker command shown below.
 
 ```
- docker run -e DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/768263387884290079/RiUQLATG9wYoXgVhV6TlI_WRjxykPtZUNBzv5f38MtzY4oC3tGmo2uMGtRTWVJMMGsMF" cryptobiff/pepe-launcher
+ docker run -e DISCORD_WEBHOOK_URL="PASTE_YOUR_DISCORD_WEBHOOK_URL_HERE" cryptobiff/pepe-launcher
 
 ```
